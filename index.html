@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coral Village Menu Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell fade-in">
+
+    <!-- STATUS BAR MOCK -->
+    <div class="status-bar">
+      <span>12:00</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <!-- TOP HEADER -->
+    <header class="top-header slide-up delay-1">
+      <div class="location-wrap">
+        <div class="location-line">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>بغداد، العراق</span>
+          <i class="fa-solid fa-chevron-down small-icon"></i>
+        </div>
+        <p class="sub-text">اكتشف أطباق قرية كورال المميزة اليوم</p>
+      </div>
+
+      <div class="logo-box">
+        <!-- ضع شعار الفندق هنا -->
+        <img src="logo.png" alt="شعار قرية كورال" />
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-text slide-up delay-2">
+      <h1> أهلاً بك في قرية كورال</h1>
+      <p>منيو تفاعلي أنيق وحديث لعرض أقسام المطعم بصورة احترافية</p>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="search-section slide-up delay-3">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="ابحث هنا عن طبق أو قسم..." />
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories slide-up delay-4">
+      <button class="category-card active">
+        <i class="fa-solid fa-utensils"></i>
+        <span>الكل</span>
+      </button>
+
+      <button class="category-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>الشوربات</span>
+      </button>
+
+      <button class="category-card">
+        <i class="fa-solid fa-leaf"></i>
+        <span>السلطات</span>
+      </button>
+
+      <button class="category-card">
+        <i class="fa-solid fa-pizza-slice"></i>
+        <span>البيتزا</span>
+      </button>
+    </section>
+
+    <!-- TOP RATED -->
+    <section class="menu-section fade-on-scroll">
+      <div class="section-head">
+        <h2>الأطباق المميزة</h2>
+        <a href="#" class="see-all-btn">
+          عرض الكل
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+
+      <div class="cards-scroll">
+        <article class="food-card">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food1.jpg" alt="طبق 1" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>مشويات قرية كورال</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-location-dot"></i> أبو نؤاس، بغداد</span>
+              <span><i class="fa-solid fa-motorcycle"></i> عرض خاص</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food2.jpg" alt="طبق 2" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>ستيك بصوص خاص</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-location-dot"></i> قرية كورال</span>
+              <span><i class="fa-solid fa-fire"></i> طبق فاخر</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food3.jpg" alt="طبق 3" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>باستا كريمية</h3>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.7</span>
+              </div>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-location-dot"></i> بغداد</span>
+              <span><i class="fa-solid fa-clock"></i> سريع التحضير</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SUGGESTED -->
+    <section class="menu-section fade-on-scroll">
+      <div class="section-head">
+        <h2>اقتراحات من الشيف</h2>
+        <a href="#" class="see-all-btn">
+          عرض الكل
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+
+      <div class="cards-scroll small-cards">
+        <article class="food-card compact">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food4.jpg" alt="طبق 4" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>سلطة كورال الخاصة</h3>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-tag"></i> 12,000 د.ع</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card compact">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food5.jpg" alt="طبق 5" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>بيتزا فور تشيز</h3>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-tag"></i> 18,000 د.ع</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="food-card compact">
+          <!-- ضع صورة الطبق هنا -->
+          <img src="food6.jpg" alt="طبق 6" class="food-image" />
+          <div class="food-content">
+            <div class="food-top-line">
+              <h3>حلويات قرية كورال</h3>
+            </div>
+            <div class="food-meta">
+              <span><i class="fa-solid fa-tag"></i> 10,000 د.ع</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav glass slide-up delay-5">
+      <a href="#" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>الرئيسية</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span>الموقع</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>البحث</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-regular fa-user"></i>
+        <span>الحساب</span>
+      </a>
+      <a href="#" class="nav-item">
+        <i class="fa-solid fa-gear"></i>
+        <span>الإعدادات</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
